@@ -1,0 +1,77 @@
+:root {
+    --pink: hsl(338, 70%, 55%);
+    --teal: hsl(183, 70%, 62%);
+    --white: hsl(334, 7%, 95%);
+    --green: hsl(133, 71%, 52%);
+}
+
+body {
+    background: hsl(224, 32%, 12%);
+    background-image: conic-gradient(
+    from 0deg at 50% 50%,
+    blue,
+    purple,
+    purple,
+    blue
+    );
+    background-blend-mode: multiply;
+    min-block-size: 100dvh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+.log {
+
+    /* --undefined: var(--white); */
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--undefined);
+    background: hsl(222, 45%, 7%);
+    padding: 2rem;
+    border-radius: 1rem;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+    transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    font-size: .6em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group input {
+    font-size: 1.5rem;
+    padding: .1em .25em;
+    background-color: var(--undefined);
+    border: 1px solid var(--green);
+    outline: none;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+/* .log > * {
+    text-shadow: 0 0 0.3em currentColor;
+} */
+
+.welcome {
+    margin-left: 25px;
+    color: var(--teal);
+}
+.password {
+    color: var(--pink);
+}
+.email {
+    color: var(--pink);
+}
+    /*--welcome: var(--pink);
+    --mail: var(--teal);
+    --password: var(--green);
+    --login-button: var(--teal);
+    --undefined: var(--white);
