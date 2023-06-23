@@ -5,6 +5,11 @@
     --green: hsl(133, 71%, 52%);
 }
 
+@font-face {
+    font-family: yes;
+    src: url(font/Montserrat-VariableFont_wght.ttf)
+}
+
 body {
     background: hsl(224, 32%, 12%);
     background-image: conic-gradient(
@@ -24,8 +29,6 @@ body {
 .log {
 
     /* --undefined: var(--white); */
-    font-size: 2rem;
-    font-weight: bold;
     color: var(--undefined);
     background: hsl(222, 45%, 7%);
     padding: 2rem;
@@ -61,13 +64,19 @@ body {
 } */
 
 .welcome {
-    margin-left: 25px;
+    font-family: yes;
+    font-size: 50px;
+    margin-left: 40px;
     color: var(--teal);
 }
 .password {
+    font-family: yes;
+    font-size: 20px;
     color: var(--pink);
 }
 .email {
+    font-family: yes;
+    font-size: 20px;
     color: var(--pink);
 }
     /*--welcome: var(--pink);
